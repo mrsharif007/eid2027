@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eid Mubarak 2027 | Nawaz Sharif</title>
+<meta name="description" content="Warm Eid Ul Fitr 2027 greetings from Nawaz Sharif, Riyadh.">
+<meta property="og:title" content="Eid Mubarak 2027">
+<meta property="og:description" content="Wishing you joy, peace and blessings this Eid Ul Fitr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#0b1d3a; --bg2:#12305c; --bg3:#1b4a6e;
+    --gold:#f4c95d; --gold2:#e0a82e; --text:#f5f1e6; --muted:#b8c4d6;
+    --card:rgba(255,255,255,.07); --border:rgba(244,201,93,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    min-height:100vh; font-family:'Poppins',system-ui,sans-serif; color:var(--text);
+    background:linear-gradient(160deg,var(--bg1),var(--bg2) 55%,var(--bg3));
+    background-attachment:fixed; overflow-x:hidden; line-height:1.6;
+  }
+  html[lang="ar"] body{font-family:'Cairo','Poppins',system-ui,sans-serif;line-height:1.8}
+  html[lang="ar"] h1,html[lang="ar"] .count-title,html[lang="ar"] .unit small{letter-spacing:0}
+
+  /* stars */
+  #stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s infinite ease-in-out}
+  @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+
+  /* language toggle */
+  #lang{
+    position:fixed;top:16px;inset-inline-end:16px;z-index:6;
+    padding:8px 18px;border-radius:999px;cursor:pointer;
+    background:rgba(11,29,58,.75);color:var(--gold);border:1px solid var(--gold);
+    font-family:'Cairo','Poppins',sans-serif;font-size:.95rem;font-weight:600;
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:background .2s,color .2s;
+  }
+  #lang:hover{background:var(--gold);color:#1a2a44}
+
+  main{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:clamp(56px,8vw,72px) 20px 40px;text-align:center}
+
+  .moon{width:clamp(110px,26vw,170px);margin:0 auto 10px;display:block;filter:drop-shadow(0 0 22px rgba(244,201,93,.55));animation:float 6s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+  .arabic{font-family:'Amiri',serif;font-size:clamp(2.6rem,10vw,5rem);color:var(--gold);line-height:1.3;text-shadow:0 0 25px rgba(244,201,93,.35)}
+  h1{font-size:clamp(1.8rem,6vw,3.2rem);font-weight:600;letter-spacing:.5px;margin-top:6px}
+  h1 span{color:var(--gold)}
+  .sub{color:var(--muted);font-weight:300;font-size:clamp(1rem,2.6vw,1.2rem);margin-top:8px}
+  .divider{width:120px;height:2px;margin:26px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:20px;
+    padding:clamp(20px,4vw,34px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    box-shadow:0 10px 40px rgba(0,0,0,.25);margin-bottom:26px;
+  }
+  .card p{font-size:clamp(1rem,2.4vw,1.15rem);margin-bottom:12px}
+  .dua{font-family:'Amiri',serif;color:var(--gold);font-size:clamp(1.4rem,4.5vw,2rem);margin:14px 0 4px}
+
+  /* countdown */
+  .count-title{font-size:.95rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+  .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:520px;margin:0 auto}
+  .unit{background:rgba(11,29,58,.6);border:1px solid var(--border);border-radius:14px;padding:12px 4px}
+  .unit b{display:block;font-size:clamp(1.4rem,6vw,2.2rem);color:var(--gold);font-weight:600}
+  .unit small{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+  .note{font-size:.8rem;color:var(--muted);margin-top:12px}
+
+  /* wishes grid */
+  .wishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:26px}
+  .wish{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 16px;transition:transform .25s,box-shadow .25s}
+  .wish:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(244,201,93,.15)}
+  .wish .ico{font-size:2rem;margin-bottom:6px}
+  .wish h3{font-size:1.05rem;color:var(--gold);margin-bottom:4px;font-weight:600}
+  .wish p{font-size:.92rem;color:var(--muted)}
+
+  .btn{
+    display:inline-block;margin:6px;padding:12px 26px;border-radius:999px;border:none;cursor:pointer;
+    font-family:inherit;font-size:1rem;font-weight:600;text-decoration:none;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a2a44;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(244,201,93,.4)}
+  .btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+
+  footer{margin-top:34px;color:var(--muted);font-size:.9rem}
+  footer .name{color:var(--text);font-weight:600;font-size:1.1rem}
+  footer a{color:var(--gold);text-decoration:none;margin:0 8px}
+  footer a:hover{text-decoration:underline}
+
+  #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--gold);color:#1a2a44;padding:10px 20px;border-radius:999px;font-weight:600;transition:transform .3s;z-index:7}
+  #toast.show{transform:translateX(-50%) translateY(0)}
+
+  @media (max-width:480px){.countdown{gap:6px}.btn{width:100%;margin:6px 0}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+
+<button id="lang" type="button" aria-label="Switch language">العربية</button>
+
+<main>
+  <svg class="moon" viewBox="0 0 200 200" role="img" aria-label="Crescent moon and star">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffe49a"/><stop offset="1" stop-color="#e0a82e"/>
+      </linearGradient>
+    </defs>
+    <path d="M130 20a80 80 0 1 0 0 160a65 65 0 1 1 0-160z" fill="url(#g)"/>
+    <polygon points="148,62 154,80 173,80 158,91 164,109 148,98 132,109 138,91 123,80 142,80" fill="url(#g)"/>
+  </svg>
+
+  <div class="arabic">عيد مبارك</div>
+  <h1 data-i18n="title">Eid <span>Ul Fitr</span> Mubarak 2027</h1>
+  <p class="sub" data-i18n="sub">Wishing you and your loved ones joy, peace and blessings</p>
+
+  <div class="divider"></div>
+
+  <section class="card">
+    <p data-i18n="p1">As the month of Ramadan comes to a close, I send my warmest greetings to everyone, friends, family, colleagues and the wider community.</p>
+    <p data-i18n="p2">May Allah accept our fasting, prayers and good deeds, forgive our shortcomings, and fill our homes with happiness and harmony.</p>
+    <div class="dua">تقبل الله منا ومنكم</div>
+    <p style="color:var(--muted);font-size:.95rem" data-i18n="duaNote">May Allah accept it from us and from you.</p>
+  </section>
+
+  <section class="card">
+    <div class="count-title" data-i18n="countTitle">Countdown to Eid Ul Fitr 2027</div>
+    <div class="countdown" id="countdown">
+      <div class="unit"><b id="d">--</b><small data-i18n="days">Days</small></div>
+      <div class="unit"><b id="h">--</b><small data-i18n="hours">Hours</small></div>
+      <div class="unit"><b id="m">--</b><small data-i18n="mins">Minutes</small></div>
+      <div class="unit"><b id="s">--</b><small data-i18n="secs">Seconds</small></div>
+    </div>
+    <p class="note" id="note" data-i18n="note">Expected around 9 March 2027, the exact date depends on the sighting of the moon.</p>
+  </section>
+
+  <section class="wishes">
+    <div class="wish"><div class="ico">🌙</div><h3 data-i18n="w1t">Peace</h3><p data-i18n="w1p">May your heart be calm and your days be bright.</p></div>
+    <div class="wish"><div class="ico">🤲</div><h3 data-i18n="w2t">Blessings</h3><p data-i18n="w2p">May every prayer be answered and every effort rewarded.</p></div>
+    <div class="wish"><div class="ico">🍽️</div><h3 data-i18n="w3t">Togetherness</h3><p data-i18n="w3p">May your table be full and your loved ones close.</p></div>
+    <div class="wish"><div class="ico">💛</div><h3 data-i18n="w4t">Joy</h3><p data-i18n="w4p">May this Eid bring smiles that last the whole year.</p></div>
+  </section>
+
+  <button class="btn" id="share" data-i18n="share">Share this greeting</button>
+  <a class="btn alt" href="#top" id="cheer" data-i18n="cheer">Eid Mubarak! 🎉</a>
+
+  <footer id="top">
+    <p data-i18n="regards">With warm wishes,</p>
+    <p class="name" data-i18n="name">Nawaz Sharif</p>
+    <p data-i18n="place">Riyadh, Saudi Arabia</p>
+    <p style="margin-top:8px">
+      <a href="https://github.com/mrsharif007" target="_blank" rel="noopener">GitHub</a>•
+      <a href="https://www.linkedin.com/in/mrsharif007" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+</main>
+
+<div id="toast"></div>
+
+<script>
+  // ---------- Translations ----------
+  var AR = {
+    pageTitle: 'عيد مبارك 2027 | نواز شريف',
+    title: 'عيد <span>الفطر</span> المبارك 2027',
+    sub: 'أتمنى لكم ولأحبائكم الفرح والسلام والبركات',
+    p1: 'مع اقتراب شهر رمضان من نهايته، أتقدم بأحر التهاني إلى الجميع: الأصدقاء والعائلة وزملاء العمل والمجتمع الأوسع.',
+    p2: 'تقبل الله صيامنا وصلاتنا وصالح أعمالنا، وغفر لنا تقصيرنا، وملأ بيوتنا بالسعادة والمودة.',
+    duaNote: 'كل عام وأنتم بخير',
+    countTitle: 'العد التنازلي لعيد الفطر 2027',
+    days: 'الأيام', hours: 'الساعات', mins: 'الدقائق', secs: 'الثواني',
+    note: 'من المتوقع حوالي 9 مارس 2027، ويعتمد الموعد الدقيق على رؤية الهلال.',
+    w1t: 'السلام', w1p: 'أتمنى أن يهدأ قلبك وتشرق أيامك.',
+    w2t: 'البركات', w2p: 'اللهم استجب كل دعاء وأجزل الأجر على كل جهد.',
+    w3t: 'اللمة', w3p: 'أتمنى أن تعمر مائدتك ويكون أحبابك قريبين منك.',
+    w4t: 'الفرح', w4p: 'أتمنى أن يمنحك هذا العيد ابتسامات تدوم طوال العام.',
+    share: 'شارك هذه التهنئة',
+    cheer: 'عيد مبارك! 🎉',
+    regards: 'مع أطيب التمنيات،',
+    name: 'نواز شريف',
+    place: 'الرياض، المملكة العربية السعودية',
+    langBtn: 'English',
+    copied: 'تم نسخ الرابط!',
+    shareText: 'عيد مبارك! أتمنى لكم الفرح والسلام والبركات.',
+    shareTitle: 'عيد مبارك 2027',
+    ended: 'عيد مبارك! 🌙'
+  };
+  var EN = {
+    pageTitle: document.title,
+    langBtn: 'العربية',
+    copied: 'Link copied!',
+    shareText: 'Eid Mubarak! Wishing you joy, peace and blessings.',
+    shareTitle: 'Eid Mubarak 2027',
+    ended: 'Eid Mubarak! 🌙'
+  };
+  // Capture the English text straight from the page
+  var nodes = document.querySelectorAll('[data-i18n]');
+  nodes.forEach(function(el){ EN[el.getAttribute('data-i18n')] = el.innerHTML; });
+
+  var lang = 'en';
+  var finished = false;
+
+  function applyLang(l){
+    lang = l;
+    var T = (l === 'ar') ? AR : EN;
+    document.documentElement.lang = l;
+    document.documentElement.dir = (l === 'ar') ? 'rtl' : 'ltr';
+    document.title = T.pageTitle;
+    nodes.forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (!(finished && k === 'note')) el.innerHTML = T[k];
+    });
+    document.getElementById('lang').textContent = T.langBtn;
+    document.getElementById('lang').setAttribute('aria-label', l === 'ar' ? 'Switch to English' : 'التبديل إلى العربية');
+    if (finished) showEnded();
+    try { localStorage.setItem('eid2027-lang', l); } catch(e){}
+  }
+
+  document.getElementById('lang').addEventListener('click', function(){
+    applyLang(lang === 'en' ? 'ar' : 'en');
+  });
+
+  // ---------- Twinkling stars ----------
+  (function(){
+    var box=document.getElementById('stars'),n=window.innerWidth<600?45:90;
+    for(var i=0;i<n;i++){
+      var s=document.createElement('div'),z=Math.random()*2.5+1;
+      s.className='star';
+      s.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;width:'+z+'px;height:'+z+'px;animation-delay:'+Math.random()*3+'s;animation-duration:'+(2+Math.random()*3)+'s';
+      box.appendChild(s);
+    }
+  })();
+
+  // ---------- Countdown (expected date; adjust if the moon sighting differs) ----------
+  var target=new Date('2027-03-09T00:00:00+03:00').getTime();
+  function showEnded(){
+    document.getElementById('countdown').innerHTML='<div style="grid-column:1/-1;font-size:1.6rem;color:var(--gold)">'+((lang==='ar')?AR.ended:EN.ended)+'</div>';
+    document.getElementById('note').textContent='';
+  }
+  function tick(){
+    var diff=target-Date.now();
+    if(diff<=0){ finished=true; showEnded(); clearInterval(timer); return; }
+    var D=Math.floor(diff/864e5),H=Math.floor(diff%864e5/36e5),M=Math.floor(diff%36e5/6e4),S=Math.floor(diff%6e4/1e3);
+    document.getElementById('d').textContent=D;
+    document.getElementById('h').textContent=String(H).padStart(2,'0');
+    document.getElementById('m').textContent=String(M).padStart(2,'0');
+    document.getElementById('s').textContent=String(S).padStart(2,'0');
+  }
+  tick();
+  var timer=setInterval(tick,1000);
+
+  // ---------- Toast ----------
+  function toast(msg){
+    var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+    setTimeout(function(){t.classList.remove('show')},2200);
+  }
+
+  // ---------- Share ----------
+  document.getElementById('share').addEventListener('click',function(){
+    var T=(lang==='ar')?AR:EN;
+    var data={title:T.shareTitle,text:T.shareText,url:location.href};
+    if(navigator.share){navigator.share(data).catch(function(){});}
+    else if(navigator.clipboard){navigator.clipboard.writeText(data.url).then(function(){toast(T.copied)});}
+  });
+
+  // ---------- Little celebration ----------
+  document.getElementById('cheer').addEventListener('click',function(e){
+    e.preventDefault();
+    var icons=['🌙','⭐','✨','🎉','💛'];
+    for(var i=0;i<30;i++){
+      var el=document.createElement('div');
+      el.textContent=icons[i%icons.length];
+      el.style.cssText='position:fixed;z-index:9;pointer-events:none;font-size:'+(18+Math.random()*18)+'px;left:'+Math.random()*100+'vw;top:100vh;transition:transform 2.4s ease-out,opacity 2.4s';
+      document.body.appendChild(el);
+      (function(el){
+        requestAnimationFrame(function(){requestAnimationFrame(function(){
+          el.style.transform='translateY(-'+(60+Math.random()*40)+'vh)';el.style.opacity='0';
+        })});
+        setTimeout(function(){el.remove()},2600);
+      })(el);
+    }
+  });
+
+  // Restore the visitor's last language choice
+  try { if (localStorage.getItem('eid2027-lang') === 'ar') applyLang('ar'); } catch(e){}
+</script>
+</body>
+</html>
